@@ -1,0 +1,94 @@
+body{
+  font-family: cormorant,sans-serif;
+}
+h1{
+  display :inline-block;
+  font-weight: 300px;
+  margin: 0px 32px 0px 0px;
+  /* margin:0px */
+  /* here padding will also work as there is no border */
+  /* padding : 0 32px 0 0 ; */
+}
+.links{
+  display: inline-block;
+  /* in inline block it will pish away vertically and horizontally */
+}
+.links li{
+  display: inline-block;
+}
+.links a{
+  color:black;
+  text-decoration: none;
+  font-size: 20px;
+  margin: 0px 8px;
+  /* top bottom and left right Compared to display: inline, the major difference is that display: inline-block allows to set a width and height on the element.
+
+Also, with display: inline-block, the top and bottom margins/paddings are respected, but with display: inline they are not.
+
+Compared to display: block, the major difference is that display: inline-block does not add a line-break after the element, so the element can sit next to other elements. */
+}
+.navbar{
+  margin: 30px;
+}
+.links ul{
+  padding: 0px;
+}
+a.active{
+  /* text-decoration: underline; */
+  /* in text decoration underline is just below but we want a little gap in there */
+  border-bottom: 2px solid black;
+}
+.gallery{
+  padding: 16px;
+}
+.card{
+  width: 49.75%;
+  display: inline-block;
+  box-sizing: border-box;
+  padding: 17px;
+  /* The CSS box-sizing property allows us to include the padding and border in an element's total width and height. */
+
+}
+.card img{
+   width: 100%;
+  height: 500px;
+  object-fit: cover;
+   /* object fit sets how the content of a element such as img or video 
+  shpuld be resized to fit its container */
+  
+  /* in cover content is sized to maintain its aspect ratio while filling the elements
+  entire box  */
+}
+.card h2{
+  display: inline-block;
+  margin:8px 0 16px 0; 
+  font-weight: 300px;
+ 
+}
+.about h3{
+  font-size: 40px;
+  font-weight: 300px;
+
+
+}
+.about{
+  width: 40%;
+  min-width: 600px;
+  margin: 100px 0px  100px 200px;
+}
+.contact{
+  margin-top: 100px;
+}
+.contact p{
+  margin: 0px;
+  font-weight: 20px;
+}
+.cta{
+  border-bottom: 2px solid black;
+  display: inline-block;
+  padding-bottom: 8px;
+  margin-top: 0px;
+}
+.card img:hover{
+  opacity: 0.9;
+}
